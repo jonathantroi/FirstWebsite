@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<link rel="stylesheet" href="firstWebsiteCSS.css">
+		<title>FirstWebsite</title>
+		<h6 id="mainHeader">My First Website with JavaScript</h6>
+
+	</header>
+
+	<body>
+		<script>
+			function bgYellow(){
+				document.body.style.background="yellow";	
+			}
+			function bgBlue(){
+				document.body.style.background="Blue";	
+			}
+			function bgRed(){
+				document.body.style.background="Red";	
+			}
+
+			function getDate(){
+				document.getElementById("dateP").innerHTML = Date();
+			}
+
+			var started = false;
+			var timeS = 0;
+
+			function clickTimer(){
+				timeS = 1;
+				timer = setInterval(startTimer, 1000);
+
+			}
+
+			function startTimer(){
+				document.getElementById("time").innerHTML = timeS;
+				timeS++;
+			}
+
+			function clearTimer(){
+				clearInterval(timer);
+				document.getElementById("time").innerHTML = timeS;
+			}
+			
+		</script>
+
+		<div id="buttonHolder">
+			<button onclick=bgYellow()>Yellow</button>
+			<button onclick=bgBlue()>Blue</button>
+			<button onclick=bgRed()>Red</button>
+		</div>
+
+		<div id="dateStuff">
+			<button id="dateButton" onclick="getDate()">Date</button>
+			<p id="dateP"></p>	
+		</div>
+
+		<button id="timerButton" onclick="clickTimer()">Timer</button>
+		<p id="time"></p>
+		<button id="clearButton" onclick="clearTimer()">ClearTimer</button>
+		
+
+	</body>
+
+
+
+
+
+
+</html>

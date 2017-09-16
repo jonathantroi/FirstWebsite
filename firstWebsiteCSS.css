@@ -1,0 +1,35 @@
+#mainHeader{
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+	margin-top: 30px;
+}
+
+#buttonHolder{
+	padding-left: 30%;
+	padding-right: 30%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#dateStuff{
+	display: flex;
+	justify-content: center;
+	flex-direction: column-reverse;
+}
+
+#dateP{
+	text-align: center;
+}
+
+#dateButton{
+	width:50px;
+	align-self: center;
+}
+
+#time{
+	border:1px solid black;
+	padding:20px;
+	width:5px;
+	border-radius: 20px;
+}
