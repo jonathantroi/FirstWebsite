@@ -1,0 +1,30 @@
+New repository
+-git init
+
+Add new repository
+-git clone REPOSITORY_LINK
+
+Änderungen vorschlagen
+-git add .
+-git commit -m "Commit message"
+
+Änderungen hochladen
+-git push origin master
+
+Create and work on new Branch
+-git checkout -b BRANCHNAME
+
+Switch back to Master
+-git checkout master
+
+Erstellten Branch löschen
+-git branch -d BRANCHNAME
+
+Branch öffentlich machen
+-git push origin BRANCHNAME
+
+Update and pull
+-git pull
+
+Merge 2 Branches (Merged dein aktuellen BRanch mit dem ausgewählten)
+-git merge BRANCHNAME
